@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/index.min.css" />
+    <title>P2P首页</title>
+  </head>
+  <body>
+    <!-- 应用容器 -->
+    <div id="container">
+        <!-- 头部 -->
+        <header>
+            <!-- 顶部菜单 -->
+            <nav class="navbar navbar-inverse navbar-clr">
+            <div class="container">
+                <div class="navbar-header">
+                <button
+                    type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false"
+                >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span
+                    class="glyphicon glyphicon-phone-alt font-icon"
+                    aria-hidden="true"
+                    ></span>
+                    <i class="font-text">028-86261949</i>
+                </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div
+                class="collapse navbar-collapse"
+                id="bs-example-navbar-collapse-1"
+                >
+                <ul class="nav navbar-nav navbar-right" id="top-list">
+                    <li><a href="#" class="top-bar-item">首页</a></li>
+                    <li><a href="./login.html" class="top-bar-item">登录</a></li>
+                    <li><a href="./signin.html" class="top-bar-item">快速注册</a></li>
+                    <li><a href="#" class="top-bar-item">帮助</a></li>
+                </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+            </nav>
+            <!-- 导航菜单 -->
+            <nav class="navbar navbar-default navbar-clr">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="./assets/images/logo.png">
+                        </a>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse  navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <ul class="nav navbar-nav navbar-mune">
+                            <li class="active">
+                                <a href="#/" data-list="main" class="menu-item">首页</a>
+                            </li>
+                            <li>
+                                <a href="#/invest" data-list="invest" class="menu-item">我要投资</a>
+                            </li>
+                            <li>
+                                <a href="#/borrow" data-list="borrow" class="menu-item">我要借款</a>
+                            </li>
+                            <li>
+                                <a href="#/personal" data-list="personal" class="menu-item">个人中心</a>
+                            </li>
+                            <li>
+                                <a href="#/newguidelines" data-list="newguidelines" class="menu-item">新手指引</a>
+                            </li>
+                            <li>
+                                <a href="#/aboutus" data-list="aboutus" class="menu-item">关于我们</a>
+                            </li>
+            
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!-- 主体内容  -->
+        <div id="root"></div>
+       
+        <!-- 尾部 -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                        <p>版权所有： 2006-2019成都源码时代科技有限公司</p>
+                        <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                        <p>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                        <p>
+                            <a href="#">蜀ICP备14030149号-1</a>&emsp;&emsp;
+                            <a href="#">蜀公网安备510114990541</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p>官方微博：</p>
+                        <a href="#"><img src="./assets/images/tecent.png" alt=""></a>
+                        <a href="#"><img src="./assets/images/sina.png" alt=""></a>
+                    </div>
+                    <div class="col-sm-2">
+                        <p>微信：</p>
+                        <img src="./assets/images/wx.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="src/index.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,55 @@
+@baseColor : #F5F5F5;
+@bColor : #00A8FF;
+@colorFFF:#fff;
+@bColor37:#337ab7;
+.main-personal{
+  margin-top: 5px;
+  .row-test{
+    .panel-group{
+      padding: 0;
+      .panel{
+        margin: 0;
+        background: @baseColor;
+        line-height: 40px;
+        text-indent: 10px;
+        padding: 0;
+        border-radius: 0px;
+        a{
+          color: @bColor;  
+        }
+        a:focus{
+          text-decoration:none;
+        }
+        a:hover{
+          text-decoration:none;
+          color: @bColor37;
+        }
+        ul{
+          list-style: none;
+          padding-left: 0px;
+          background: @colorFFF;
+          li{
+            line-height: 40px;
+            text-indent: 40px;
+            a:hover{
+              text-decoration:underline;
+              color: @bColor37;
+            }
+          }
+          li.active{
+            background: @bColor37;
+            a{
+              color: @colorFFF;
+              text-decoration: none;
+            }
+            a:hover{
+              text-decoration:underline;
+            }
+            
+          }
+        }
+      }
+    }
+      
+  }
+}

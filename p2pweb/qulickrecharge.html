@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/qulickcharge.min.css" />
+    <link rel="stylesheet" href="lib//bootstrapValidator.min.css">
+    <title>快速充值</title>
+</head>
+
+<body>
+    <!-- 应用容器 -->
+    <div id="container">
+        <!-- 头部 -->
+        <header>
+            <!-- 顶部菜单 -->
+            <nav class="navbar navbar-inverse navbar-clr">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <span class="glyphicon glyphicon-phone-alt font-icon" aria-hidden="true"></span>
+                            <i class="font-text">028-86261949</i>
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./index.html" class="top-bar-item">首页</a></li>
+                            <li><a href="" class="top-bar-item">用户名</a></li>
+                            <li><a href="./signin.html" class="top-bar-item">账户充值</a></li>
+                            <li><a href="#" class="top-bar-item">注销</a></li>
+							<li><a href="#" class="top-bar-item">帮助</a></li>
+                        </ul>
+                    </div>
+
+        </header>
+        <!-- 快速充值 -->
+        <main class="qulickcharge">
+            <div class="well well-lg">
+                <div class="container">
+                    <div><img src="./assets/images/logo.png" alt=""><span class="usercharge">账户充值</span></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class=" el-head">
+                    <h2> 账户充值</h2>
+                    <p>1. 由于银行系统的限制，充值功能建议使用 IE 内核（IE8及以上）的浏览器。</p>
+
+                    <p>2. 请注意：为打击信用卡套现行为，充值资金必须经过投资回款后方能允许提现。</p>
+
+
+                </div>
+                <!-- 选项卡 -->
+                <!-- 选项卡菜单-->
+
+                <ul id="myTab" class="nav nav-tabs" role="tablist">
+                    <li><a href="#bulletin" role="tab" data-toggle="tab">线上充值（第三方平台）</a></li>
+                    <li class="active"><a href="#rule" role="tab" data-toggle="tab">线下充值</a></li>
+
+                </ul>
+                <!-- 选项卡面板 -->
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane" id="bulletin">系统暂不支持，请采用线下充值</div>
+                    <div class="tab-pane  active" id="rule">
+                        <!-- 表格 -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+
+                                    <th>银行名称</th>
+                                    <th>开户人姓名</th>
+                                    <th>银行帐号</th>
+                                    <th>开户行支行名称</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>中国工商银行</td>
+                                    <td>源代码</td>
+                                    <td>62170038233428412750</td>
+                                    <td>府城大道支行</td>
+                                </tr>
+                                <tr>
+                                    <td>中国农业银行</td>
+                                    <td>源代码</td>
+                                    <td>62170038233428412750</td>
+                                    <td>府城大道支行</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 文字 -->
+                        <div class="el-word">
+
+                            <h4>第一步：</h4>
+                            <span>请选择往以上一个账号汇款或转账您所要充值的金额（若您是跨行转账，推荐选择建行）。注：请保存您的交易记录信息。</span>
+
+                            <h4>第二步：</h4>
+                            <span>款或转账成功后，再选择你所汇款或转账的账号，并填写以下完整的信息后，提交您的线下充值申请。我们将会在下个工作日核对您的申请。</span>
+
+
+                        </div>
+                        <!-- 表单 -->
+
+                        <form class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="bank" class="col-sm-2 control-label">银行</label>
+                                <div class="col-sm-4"><select id="bank" name="bank" class="form-control">
+                                        <option>工商银行3849284932</option>
+                                        <option>农业银行3849284932</option>
+                                        <option>邮政银行3849284932</option>
+                                    </select></div>
+
+                            </div>
+                            <div class="form-group">
+
+                                <label for="trade" class="col-sm-2 control-label">交易号</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="trade" class="form-control" id="trade" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="rtime" class="col-sm-2 control-label">充值时间</label>
+                                <div class="col-sm-4">
+                                    <input type="text" id="rtime" class="form-control" id="rtime">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <label for="rechage" class="col-sm-2 control-label">充值金额</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="rechage" name="rechage">
+                                    </div>
+                                </div>
+                            <div class="form-group">
+                                <label for="explain" class="col-sm-2 control-label">说明</label>
+                                <div class="col-sm-10">
+                                    <textarea id="explain" name="explain" class="form-control" rows="2"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class=".tab-content  btn-primary">确认提交</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+        <!-- 尾部 -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                        <p>版权所有： 2006-2019成都源码时代科技有限公司</p>
+                        <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                        <p>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                        <p>
+                            <a href="#">蜀ICP备14030149号-1</a>&emsp;&emsp;
+                            <a href="#">蜀公网安备510114990541</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p>官方微博：</p>
+                        <a href="#"><img src="./assets/images/tecent.png" alt=""></a>
+                        <a href="#"><img src="./assets/images/sina.png" alt=""></a>
+                    </div>
+                    <div class="col-sm-2">
+                        <p>微信：</p>
+                        <img src="./assets/images/wx.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrapValidator.min.js"></script>
+    <script src="src/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/dist/css/personal.min.css">
+<main>
+    <div class="container main-personal">
+        <div class="row row-test">
+            <div class="col-sm-3">
+                <ul id="menu" class="list-grou panel-group">
+                    <li id="subnavlist" class="list-group-item panel panel-default panel-heading">
+                        <a href="#collapseOne" data-parent="#menu">投资项目</a>
+                    </li>
+                    <li class="list-group-item panel panel-default panel-heading">
+                        <a href="#collapseTwo" data-toggle="collapse" data-parent="#menu">借款项目</a>
+                        <ul id="collapseTwo" class="panel-collapse collapse">
+                            <li id="subnavlist" class=""><a href="#/personal/loan" data-subnav="loan" class="menu-items">借款项目</a></li>
+                            <li id="subnavlist" class=""><a href="#/personal/refund" data-subnav="refund" class="menu-item">还款明细</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item panel panel-default panel-heading">
+                        <a href="#collapseThree" data-toggle="collapse" data-parent="#menu"><span class="text-title">我的账户</a>
+                        <ul id="collapseThree" class="panel-collapse collapse">
+                            <li id="subnavlist" class=""><a href="#/personal/accountInfo" data-subnav="accountInfo" class="menu-items">账户信息</a></li>
+                            <li id="subnavlist" class=""><a href="#/personal/realname" data-subnav="realname" class="menu-items">实名认证</a></li>
+                            <li id="subnavlist"><a href="#/personal" class="menu-items">银行卡管理</a></li>
+                            <li id="subnavlist"><a href="#/personal/loginlist" data-subnav="loginlist" class="menu-items">登录记录</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item panel panel-default panel-heading">
+                        <a href="#collapseFour" data-toggle="collapse" data-parent="#menu">资产详情</a>
+                        <ul id="collapseFour" class="panel-collapse collapse">
+                            <li id="subnavlist" class=""><a href="#/personal/accountwater" data-subnav="accountwater" class="menu-items">账户流水</a></li>
+                            <li id="subnavlist" class=""><a href="#/personal/recharge" data-subnav="recharge" class="menu-items">充值明细</a></li>
+                            <li id="subnavlist"><a href="#/personal/record" data-subnav="record" class="menu-items">提现记录</a></li>
+                            <li id="subnavlist"><a href="#/personal" class="menu-items">收款明细</a></li>
+                        </ul>
+                    </li>
+                    <li id="subnavlist" class="list-group-item panel-default panel">
+                        <a href="#/personal/personaldata"data-subnav="personaldata" data-parent="#menu"> 个人资料</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="self" class="col-sm-9"></div>
+        </div>
+    </div>
+</main>
+<script src="/src/personal.js"></script>

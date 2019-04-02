@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/signin.min.css" />
+    <link rel="stylesheet" href="lib//bootstrapValidator.min.css">
+    <title>P2P首页</title>
+</head>
+
+<body>
+    <!-- 应用容器 -->
+    <div id="container">
+        <!-- 头部 -->
+        <header>
+            <!-- 顶部菜单 -->
+            <nav class="navbar navbar-inverse navbar-clr">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <span class="glyphicon glyphicon-phone-alt font-icon" aria-hidden="true"></span>
+                            <i class="font-text">028-86261949</i>
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./index.html" class="top-bar-item">首页</a></li>
+                            <li><a href="./login.html" class="top-bar-item">登录</a></li>
+                            <li><a href="/signin.html" class="top-bar-item">快速注册</a></li>
+                            <li><a href="#" class="top-bar-item">帮助</a></li>
+                        </ul>
+                    </div>
+
+        </header>
+
+        <main>
+            <div class="well well-lg">
+                <div class="container">
+                    <div><img src="./assets/images/logo.png" alt=""><span class="userlogin">用户注册</span></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">用户注册</div>
+                    <div class="panel-body">
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="username">用户名:</label>
+                                <input type="text" id="username" name="username" placeholder="请输入用户名">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">密&emsp;码:</label>
+                                <input type="password" name="password" id="password" placeholder="请输入密码" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="checkpassword">确认密码:</label>
+                                <input type="password" id="checkpassword" name="checkpassword" id="checkpassword" placeholder="请再次输入密码">
+                            </div>
+                            <div class="form-group">
+                                <label for="vcode">验证码:</label>
+                                <input type="text" name="vcode" id="vcode" placeholder="请输入验证码" autocomplete="off">
+                            </div>
+                            <div class="error">验证码错误请从新输入！</div>
+                            <div class="form-group">
+                            <canvas class="vcode"></canvas>
+                            </div>
+                            <div class="form-group">
+                            <button id="signin"  class="btn btn-success">&emsp;同意协议并注册&emsp;</button>&emsp;&emsp;
+                                <span> <a href="./login.html">已有账号,马上登录</a> </span>
+                            </div>
+                             <p><a href="#">《使用协议说明书》</a></p>   
+                    </form>
+                </div>
+                </div>
+            </div>
+    </div>
+
+    </main>
+    <!-- 尾部 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                    <p>版权所有： 2006-2019成都源码时代科技有限公司</p>
+                    <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                    <p>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                    <p>
+                        <a href="#">蜀ICP备14030149号-1</a>&emsp;&emsp;
+                        <a href="#">蜀公网安备510114990541</a>
+                    </p>
+                </div>
+                <div class="col-sm-2">
+                    <p>官方微博：</p>
+                    <a href="#"><img src="./assets/images/tecent.png" alt=""></a>
+                    <a href="#"><img src="./assets/images/sina.png" alt=""></a>
+                </div>
+                <div class="col-sm-2">
+                    <p>微信：</p>
+                    <img src="./assets/images/wx.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrapValidator.min.js"></script>
+    <script src="lib/vcode.js"></script>
+    <script src="src/signin.js"></script>
+</body>
+
+</html>

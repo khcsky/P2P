@@ -1,0 +1,168 @@
+@baseColor : #00A8FF;
+
+// 顶部导航
+.navbar-clr {
+    border-radius: 0;
+    margin: 0;
+
+    .font-icon {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .font-text {
+        color: #fff;
+        font-size: 28px;
+    }
+
+
+    .navbar-nav>li>a.top-bar-item {
+        color: #fff;
+
+        &:hover {
+            color: @baseColor;
+            text-decoration: underline;
+        }
+    }
+
+    .navbar-nav>li>a.username {
+        color: @baseColor;
+        text-decoration: none !important;
+    }
+
+    // 菜单子项目
+    .navbar-mune>li>a.menu-item {
+        line-height: 50px;
+        font-size: 16px;
+
+        &:hover {
+            color: #00A8FF;
+            background-color: #eee;
+        }
+    }
+
+}
+
+main {
+    
+    // 借款人样式
+        .panel-body>p {
+              text-align: center;
+              color: @baseColor;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            
+        }
+        .panel-body .el-news{
+                margin-top: 20px;
+            }
+            .panel-body .glyphicon-education{
+                font-size: 18px;
+            }
+            h4{
+               
+                float: left;
+                font-size: 22px;
+                color:#0099DD;
+            }
+            .xin{
+                width: 26px;
+                float: left;
+                display: inline-block;
+                height: 26px;
+                color: #fff;
+                line-height: 26px;
+                text-align: center;
+                font-weight: bold ;
+                border-radius: 3px;
+                margin-top: 14px;
+                margin-left: 6px;
+                background-color: rgb(18, 113, 160);
+            }
+            .el-news2 p{
+                font-size: 16px;
+                color: #999;
+                line-height: 30px;
+                span{
+                    color: @baseColor;
+                }
+            }
+            .el-news3 p{
+                font-size: 16px;
+                color: #999;
+                span{
+                    color: @baseColor;
+                }
+                &:last-of-type{
+                    font-size: 18px;
+                    color: @baseColor;
+                }
+            }
+
+            //  借款人信息
+          .borinfo{
+            .panel-body>ul{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap:wrap;
+               li{
+                   margin-right: 40px;
+                   list-style: none;
+                   line-height: 30px;
+                   font-size: 16px;
+                   span{
+                       color: @baseColor;
+                   }
+
+               }
+            }
+          }
+        //   材料信息,还款情况，投标记录
+          .Materialinfo,.repayment,.bidrecord{
+          th{
+              font-size: 18px;
+          }
+          td{
+              font-size: 16px;
+          }
+
+          }
+
+          .bidrecord{
+             td:nth-of-type(3){
+                 color: @baseColor;
+             }
+          }
+}
+
+
+// 尾部
+footer {
+    padding-top: 20px;
+    background-color: #f8f8f8;
+   
+    img {
+        width: 100%;
+    }
+
+    .footer-left {
+
+        padding-left: 30px;
+
+        p {
+            & a {
+                color: #337ab7;
+
+                &:hover {
+
+                    color: #355169;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+
+}
